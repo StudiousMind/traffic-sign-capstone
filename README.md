@@ -93,6 +93,15 @@ traffic-sign-capstone/
 
 ---
 
+### 🔗 Download Model Weights
+
+The trained ResNet18 weights used in this project can be downloaded from the release page:
+
+➡️ **[Download resnet18_gtsrb_state_dict.pth](https://github.com/StudiousMind/traffic-sign-capstone/releases/latest)**  
+
+
+---
+
 ## 🎓 About
 
 This project was developed as a Deep Learning Capstone at **Fanshawe College**.

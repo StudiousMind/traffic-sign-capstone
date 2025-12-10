@@ -1,39 +1,110 @@
-# Traffic Sign Classifier (GTSRB)
 
-This project is a capstone for my PyTorch deep learning course.  
-It uses a fine-tuned ResNet18 model to classify German traffic signs (GTSRB dataset) and a Streamlit web app to demo the model.
-
-The app also integrates Google Gemini to generate a simple safety explanation for the predicted sign and includes a Grad-CAM visualization to show where the model is "looking".
 
 ---
 
-## Features
+# 🛑 Traffic Sign Classifier (GTSRB)
 
-- ✅ ResNet18 fine-tuned on the **GTSRB** traffic sign dataset  
-- ✅ Streamlit web app with image upload  
-- ✅ Top-1 and Top-3 predictions with confidence scores  
-- ✅ Safety note for each predicted class  
-- ✅ **Gemini** integration for natural-language explanation of the sign  
-- ✅ **Grad-CAM** heatmap overlay to visualize model focus  
+**Deep Learning Capstone – 2025**
+**Author:** Khaled (Kai) Balhareth – 1250916
 
----
-
-## Tech Stack
-
-- Python
-- PyTorch / Torchvision
-- Streamlit
-- Google Generative AI (Gemini)
-- NumPy, Pillow, scikit-learn
+This project is an interactive **Streamlit web app** that classifies **German traffic signs** using a fine-tuned **ResNet18** model.
+It includes **Grad-CAM visualizations** and **AI explanations (Gemini)** for interpretability.
 
 ---
 
-## Project Structure
+## 🚦 Features
 
-```text
-traffic_sign_capstone/
-├── app.py                # Streamlit app (inference + UI)
-├── best_resnet18_gtsrb.pth  # Trained PyTorch model weights
-├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
-└── .gitignore
+* ✔️ **Traffic sign classification** using ResNet18
+* ✔️ **Grad-CAM heatmaps** to show what the model focuses on
+* ✔️ **Safety notes** for each sign
+* ✔️ **Top-3 predictions**
+* ✔️ **Gemini AI explanation** (optional)
+* ✔️ Clean UI with sidebar instructions
+* ✔️ Fully interactive Streamlit app
+
+---
+
+## 🖼️ Demo Screenshot
+
+
+![Screenshot](screenshot.png)
+
+---
+
+## 🧠 Model Details
+
+**Architecture:** ResNet18 (PyTorch)
+**Dataset:** GTSRB – German Traffic Sign Recognition Benchmark
+**Training:** Fine-tuned for classification
+**Limitation:** Accuracy may drop on Canadian/US signs (different shapes & colors)
+
+---
+
+## 🔍 Grad-CAM
+
+Grad-CAM highlights the regions the model considers important for a prediction.
+This improves interpretability and helps explain why the model thinks a sign is a certain class.
+
+---
+
+## 🤖 Optional: Gemini AI Explanation
+
+has been added 
+
+---
+
+## ▶️ How to Run Locally
+
+### **1. Create + activate virtual environment**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### **2. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run Streamlit**
+
+```bash
+streamlit run app.py
+```
+
+
+
+---
+
+## 📂 Project Structure
+
+```
+traffic-sign-capstone/
+│
+├── app.py
+├── app - backup.py
+├── resnet18_gtsrb_state_dict.pth
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🎓 About
+
+This project was developed as a Deep Learning Capstone at **Fanshawe College**.
+It demonstrates a full ML pipeline:
+Training → Deployment → Explainability → User Interface.
+
+---
+
+## 📬 Contact
+
+**Email:** [KhaledBalharith@gmail.com](mailto:KhaledBalharith@gmail.com)
+
+---
+
+
